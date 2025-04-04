@@ -1,0 +1,480 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex-direction: column;
+    background-color: black;
+}
+
+#section1 {
+    background-image: url('./images/planet.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
+
+h1, h2, h3 {
+    position: relative;
+    z-index: 5;
+    color: white;
+}
+
+.sec1quote {
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 20px;
+    z-index: 10; 
+}
+
+.sec1options {
+    margin-left: 2500px;
+}
+
+.sec1h3 {
+    margin-top: 350px;
+    margin-left: 1604px;
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.sec1h1 {
+    position: absolute;
+    margin-left: 1595px;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    margin-top: 390px;
+}
+
+.sec1career {
+    font-size: 30px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 615px;
+    margin-top: 440px;
+    
+}
+
+.sec1buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 20px; /* Adds space between buttons */
+    margin-left: 650px;
+}
+
+.button1 {
+    border: solid white 1px;
+    background-color: transparent;
+    margin-top: -4px;
+}
+
+
+.meteor {
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+    animation: meteor 5s linear infinite;
+}
+
+.meteor:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -2px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.meteor-1 { top: 100px; left: 10%; animation-duration: 2s; }
+.meteor-2 { top: 200px; left: 20%; animation-duration: 4s; }
+.meteor-3 { top: 300px; left: 30%; animation-duration: 7s; }
+.meteor-4 { top: 400px; left: 40%; animation-duration: 2.5s; }
+.meteor-5 { top: 500px; left: 50%; animation-duration: 5.5s; }
+.meteor-6 { top: 600px; left: 60%; animation-duration: 3s; }
+.meteor-7 { top: 700px; left: 70%; animation-duration: 8s; }
+.meteor-8 { top: 800px; left: 80%; animation-duration: 4.8s; }
+.meteor-9 { top: 900px; left: 90%; animation-duration: 6s; }
+.meteor-10 { top: 1000px; left: 15%; animation-duration: 5.8s; }
+
+@keyframes meteor {
+    0% {
+        opacity: 0;
+        margin-top: -200px;
+        margin-left: 0px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        margin-top: 300px;
+        margin-left: -600px;
+    }
+}
+
+#section2 {
+    background-image: url('./images/aboutme.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;       
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+
+.sec2h1 {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 1310px;
+    font-size: 45px;
+}
+
+.sec2h3 {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 1325px;
+    color: gray;
+}
+
+.sec2exp1 {
+    display: inline-flex;
+    height: 400px;
+    width: 600px;
+    border: solid white 1px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 300px;
+    font-size: 30px;
+    margin-left: 750px;
+    border: solid white 1px;
+    border-radius: 5px;
+}
+
+.sec2exp2 {
+    display: inline-flex;
+    height: 400px;
+    width: 600px;
+    padding-top: -10;
+    border: solid white 1px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 300px;
+    margin-left: 1450px;
+    border: solid white 1px;
+    border-radius: 5px;
+}
+
+.sec2p {
+    position: absolute;
+    margin-left:500px;
+    font-size: 34px;
+    margin-top: 1000px;
+}
+
+.sec2box2 {
+    position: absolute;
+    margin-top: -200px;
+}
+
+#sec2svg1 {
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+}
+
+#sec2svg2 {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+#section3 {
+    background-image: url('./images/skillsandexp.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;       
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    margin-top: 80px;
+}
+
+.sec3h3 {
+    padding-left: 1325px;
+    color: gray;
+    padding-top: 30px;
+}
+
+.sec3h1 {
+    margin-top: 10px;
+    margin-left: 1310px;
+    font-size: 40px;
+}
+
+.frontnback {
+    margin-top: 400px;
+    margin-left: 60px;
+}
+
+.frontskills {
+    height: 500px;
+    width: 1000px;
+    margin-left: 300px;
+    font-size: 30px;
+    border: solid white 1px;
+    border-radius: 2%;
+}
+
+.fronttitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 420px;
+    text-decoration: underline;
+}
+
+.backtitle {
+    position: absolute;
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: -603px;
+    margin-left: 1550px;
+    text-decoration: underline;
+}
+
+
+.frontskillsrow1 {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.frontskillsrow2 {
+    margin-left: 470px;
+    margin-top: -445px;
+    padding-bottom: 50px;
+}
+
+.backskills {
+    height: 450px;
+    width: 1000px;
+    margin-left: 1400px;
+    font-size: 30px;
+    border: solid white 1px;
+    border-radius: 2%;
+    margin-top: -503px;
+    padding-top: 50px;
+}
+
+.backskillsrow1 {
+    padding: 50px;
+    margin-top: -90px;
+}
+
+.backskillsrow2 {
+    margin-left: 500px;
+    margin-top: -528px;
+}
+
+#skillbox1 {
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+}
+
+#skillbox2 {
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+}
+
+#section4 {
+    background-image: url('./images/projects.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;       
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+
+
+
+
+#section4 {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+
+.project1 {
+    display: inline-block;
+    margin: 20px;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: -1200px;
+    height: 700px;
+    width: 700px;
+    border: solid white 1px;
+    border-radius: 5px;
+}
+
+.firstbutton {
+    position: absolute;
+    margin-left: -910px;
+    margin-top: 1000px;
+    background: none;
+    border: solid white 1px;
+}
+
+.project2 {
+    display: inline-block;
+    margin: 20px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -320px;
+    height: 900px;
+    width: 620px;
+    border: solid white 1px;
+    border-radius: 5px;
+}
+
+.secondbutton {
+    position: absolute;
+    margin-left:  -80px;
+    margin-top: 1100px;
+    background: none;
+    border: solid white 1px;
+}
+
+.project3 {
+    display: inline-block;
+    margin: 20px;
+    position: absolute;
+    margin-left: 540px;
+    height: 700px;
+    width: 600px;
+    border: solid white 1px;
+    margin-top: 219px;
+    border-radius: 5px;
+}
+
+.thirdbutton {
+    position: absolute;
+    margin-left:  790px;
+    margin-top: 1000px;
+    background: none;
+    border: solid white 1px;
+}
+
+
+.projects img:hover {
+    transform: scale(1.05); /* Hover effect to enlarge image */
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 100%; /* Stacks images vertically on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        width: 80%; /* Adjust image size for mobile devices */
+    }
+}
+
+.sec4h3 {
+    color: gray;
+}
+
+.sec4h1 {
+    margin-top: -10px;
+}
+
+
+
+
+
+.section5 {
+    background-image: url('./images/footer.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;       
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+
+
+.sec5h1 {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 1310px;
+    font-size: 45px;
+}
+
+.sec5h3 {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 1375px;
+    color: gray;
+}
+
+.emailme {
+    position: absolute;
+    margin-left: 1240px;
+    margin-top: 520px;
+    font-size: 35px;
+}
+
+
+#footericon {
+    height: 40px;
+    width: 40px;
+    margin-left: -50px;
+    position: absolute;
+}
